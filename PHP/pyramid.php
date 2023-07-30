@@ -1,5 +1,5 @@
 <?php
-
+//comment
 $numberOfPyramid = readline("Enter the number of pyramids: ");
 $type = readline("Enter the type of pyramid (Select 1 for regular and 2 for upside-down): ");
 
