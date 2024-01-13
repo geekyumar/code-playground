@@ -2,9 +2,10 @@
 
 class miniDatabase
 {
+    public $name;
     public function __construct()
     {
-        echo "Object has been initialized";
+        echo "Object has been initialized\n";
     }
 
     public function get($key)
