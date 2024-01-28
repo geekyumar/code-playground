@@ -72,20 +72,16 @@ task.description);
                     toDoList.viewTasks();
                     break;
                 case 3:
-                    System.out.print("Enter the index of the task to mark 
-as completed: ");
+                    System.out.print("Enter the index of the task to mark as completed: ");
                     int index = scanner.nextInt();
-                    toDoList.markAsCompleted(index - 1); // Adjust index 
-to 0-based
+                    toDoList.markAsCompleted(index - 1); 
                     break;
                 case 4:
-                    System.out.println("Exiting the application. 
-Goodbye!");
+                    System.out.println("Exiting the application. Goodbye!");
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Invalid choice. Please enter a 
-valid option.");
+                    System.out.println("Invalid choice. Please enter a valid option.");
             }
         }
     }

@@ -9,5 +9,7 @@ int main(){
     var.y = 13;
 
     printf("var.x is: %d\n", var.x);
-    printf("var.y is: %d", var.y);
+    printf("var.y is: %d\n", var.y);
+
+    printf("%lu", sizeof(var));
 }
