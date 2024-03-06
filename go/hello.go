@@ -30,6 +30,19 @@ func main() {
 
 	arr1 := arr[0:2]
 	fmt.Println("Slicing:", arr1)
+
+	// conditional statements
+
+	for i := 0; i <= 5; i++ {
+		fmt.Println(i)
+	}
+
+	index := []int{1, 2, 3, 4, 5}
+
+	for index, value := range index {
+		fmt.Printf("Index: %d, Value: %d\n", index, value)
+	}
+
 }
 
 func hello(a int, b int) (product int) {
