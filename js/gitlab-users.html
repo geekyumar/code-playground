@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(()=>{
+        const token = "selfmade.ninja.H76Z9x7yy2Jd3NfYbcR7"
+        const headers = {
+            "Private-Token": token
+        }
+        $.ajax({
+            url: "https://git.selfmade.ninja/api/v4/users",
+            type: 'GET',
+            headers: headers,
+            dataType: 'json', 
+
+            success: (res)=>{
+                console.log(res[0]['id'])
+            }, 
+
+            error: ()=>{
+                console.log('error')
+            }
+        })
+    })
+</script>
