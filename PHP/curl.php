@@ -18,5 +18,4 @@ if(curl_errno($curl)){
     echo "error";
 }
 
-$var = json_decode($response)[0]->id;
-echo $var;
+system("echo $response >> /Users/umarfarooq/Documents/Developer/code-playground/file.txt");
